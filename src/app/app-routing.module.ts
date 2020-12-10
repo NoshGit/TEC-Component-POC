@@ -5,7 +5,7 @@ import { HomeComponent} from './component/home/home.component';
 import { ButtonsComponent} from './component/buttons/buttons.component';
 
 const routes: Routes = [
-  { path: '', redirectTo:"home", pathMatch: "full"},
+  { path: '', redirectTo:"home/buttons", pathMatch: "full"},
   { path: 'home', component: HomeComponent, children:[
     { path: 'buttons', component: ButtonsComponent },
     { path: 'grid', component: GridComponent }]}

@@ -1,7 +1,8 @@
 <div class="home-wrapper">
     <mat-toolbar class="header">
-        <mat-icon (click)="drawer.toggle()" class="icon">menu</mat-icon>
-        <span>ANGULAR LIBRARY</span>
+        <div class="te-logo"><img src="./../../../assets/image/te_logo.png"/></div>
+        <mat-icon (click)="drawer.toggle()" class="hamburger">menu</mat-icon>
+        <span>{{title}}</span>
     </mat-toolbar>
     <div class="content">
         <mat-drawer-container autosize>

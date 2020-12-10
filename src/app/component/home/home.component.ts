@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.less']
 })
 export class HomeComponent implements OnInit {
+  title = 'ANGULAR COMPONENT POC';
   constructor() { }
   showFiller = false;
   width = 0;
