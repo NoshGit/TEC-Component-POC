@@ -1,0 +1,302 @@
+
+.add-to-cart-modal{
+    color: #494747;
+    font: 400 14px Avenir,Avenir W02,Arial,Helvetica,sans-serif;
+    overflow-x: hidden;
+    padding: 20px;
+    .addedToCart-checkout{
+        .addedToCart-product-name{
+            @media (max-width: 720px) {
+                width: 100%;
+            }
+            width: 67%;
+            float: left;
+            border-right: 1px solid #ededee;
+            min-height: 337px;
+            .product-container{
+                padding-right: 20px;
+                @media (max-width: 720px) {
+                    padding-right: 0px;
+                }
+                .addedToCart-head{
+                    h1{
+                        font-weight: 200;
+                        font-size: 26px;
+                        @media (max-width: 720px) {
+                            font-size: 16px;
+                            margin: 0;
+                        }
+                    }
+                }
+                .latest-part{
+                    border-top: 1px solid #ededee;
+                    clear: both;
+                    padding-top: 17px;
+                    @media (max-width: 720px) {
+                        border-top: none;
+                        padding-top: 7px;
+                    }
+                    .part-details{
+                        width: 55%;
+                        float: left;
+                        @media (max-width: 720px) {
+                            width: 100%;
+                        }
+                        .product-image{
+                            width: 85px;
+                            float: left;
+                            height: 85px;
+                            margin-right: 25px;
+                            background: #fff;
+                            line-height: 85px;
+                            .imgdiv{
+                                width: 85px;
+                                height: 85px;
+                                border: 1px solid #ededee;
+                                a{
+                                    border: 0;
+                                    outline: none;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                        vertical-align: middle;
+                                    }
+                                }
+                            }
+                        }
+                        .product-desc{
+                            display: inline-block;
+                            padding-right: 20px;
+                            .cart-ul-width{
+                                width: 150px;
+                                display: inline-block;
+                                li{
+                                    font-size: 12px;
+                                    font-weight: 400;
+                                    line-height: 1.5;
+                                    margin-bottom: 4px;
+                                    width: 100%;
+                                    h3{
+                                        font-size: 16px;
+                                        line-height: 1.5;
+                                        padding: 5px 0 7px;
+                                        margin: 0;
+                                        @media (max-width: 720px) {
+                                            padding: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .price-details{
+                        width: 20%;
+                        float: left;
+                        @media (max-width: 720px) {
+                            width: 100%;
+                            padding-left: 112px;
+                            padding-top: 5px;
+                        }
+                        span{
+                            font-size: 12px;
+                            font-weight: 700;
+                            display: block;
+                            padding-bottom: 10px;
+                            @media (max-width: 720px) {
+                                display: none;
+                            }
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                    .volume-pricing{
+                        width: 25%;
+                        float: left;
+                        @media (max-width: 720px) {
+                            width: 39%;
+                            padding-left: 112px;
+                            padding-top: 5px;
+                        }
+                        span{
+                            font-size: 12px;
+                            font-weight: 700;
+                            display: block;
+                            padding-bottom: 10px;
+                        }
+                        ul{
+                            width: 80%;
+                            display: inline-block;
+                            li{
+                                clear: both;
+                                display: inline-block;
+                                width: 100%;
+                                span{
+                                    font-weight: 500;
+                                    float: left;
+                                    padding: 0;
+                                    &:last-child{
+                                        float: right;
+                                    }
+                                }
+                            }
+                        }
+                        .view-more{
+                            display: inline;
+                            text-align: left;
+                            color: #0066a1;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                .order-update{
+                    clear: both;
+                    width: 68%;
+                    float: right;
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                    padding-top: 12px;
+                    border-top: 1px solid #ededee;
+                    position: relative;
+                    @media (max-width: 720px) {
+                        width: 100%;
+                    }
+                    .minimum-order{
+                        width: 50%;
+                        float: left;
+                        p{
+                            padding-bottom: 8px;
+                            font-size: 12px;
+                        }
+                        .addQuantity-header{
+                            border: 1px solid #ccc;
+                            padding: 10px 2px 10px 15px;
+                            span{
+                                width: 30%;
+                                display: inline-block;
+                            }
+                            .addQuantityPDPheader{
+                                width: 70%;
+                                text-align: right;
+                                border: 0;
+                                outline: none;
+                            }
+                        }
+                    }
+                    .parts-in-stock{
+                        width: 50%;
+                        display: inline-block;
+                        p{
+                            padding-bottom: 7px;
+                            font-size: 12px;
+                            text-align: right;
+                        }
+                        .secondary-cta-no-icon{
+                            display: block;
+                            text-align: center;
+                            line-height: 40px;
+                            margin: 0 0 0 20px;
+                            cursor: pointer;
+                            background: #f7f7f7;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .atc-tooltip{
+                    clear: both;
+                    float: left;
+                    font-weight: 400;
+                    font-size: 12px;
+                }
+            }
+            
+        }
+        .addedToCart-btn-groups{
+            @media (max-width: 720px) {
+                width: 100%;
+            }
+            float: right;
+            width: 32%;
+            display: block;
+            .btn-groups-container{
+                padding: 0px 15px;
+                @media (max-width: 720px) {
+                    padding: 0px;
+                }
+                .freeShippingBannerWrapper{
+                    .freeShippingBanner{
+                        border: 1px solid #ccc;
+                        background: #f7f7f7;
+                        padding: 10px 10px 10px 12px;
+                        .fsbContent{
+                            .fsbTitle{
+                                font-size: 12px;
+                                font-weight: 600;
+                                color: #e98300;
+                                margin-right: 5px;
+                            }
+                            p{
+                                display: inline;
+                            }
+                        }
+                    }
+                }
+                .price-summary{
+                    padding: 20px 0px;
+                    .summary-line{
+                        font: 400 12px Avenir,Avenir W02,Arial,Helvetica,sans-serif;
+                        color: #747678;
+                        line-height: 1.5;
+                        clear: both;
+                    }
+                    ul{
+                        li{
+                            clear: both;
+                            padding-bottom: 5px;
+                            span{
+                                float: left;
+                                font-size: 12px;
+                                line-height: 1.5;
+                                &:last-child{
+                                    float: right;
+                                    font-weight: 700;
+                                }
+                            }
+                            &.total{
+                                margin: 11px 0 0;
+                                padding: 17px 0 0;
+                                border-top: 1px solid #ededee;
+                                clear: both;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+                .addedToCart-continueCheckout{
+                    width: 100%;
+                    cursor: pointer;
+                    a{
+                        font-weight: 700;
+                        padding: 15px 0px;
+                        display: block;
+                        margin: 0;
+                        background: #e98300;
+                        text-transform: uppercase;
+                        text-align: center;
+                        color: #fff;
+                    }
+                }
+                .btnCartContinueShop {
+                    font-weight: 700;
+                    padding: 15px 0px;
+                    text-align: center;
+                    margin-top: 11px;
+                    background: #f7f7f7;
+                    color: #0066a1;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+    }
+}

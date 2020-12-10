@@ -1,0 +1,18 @@
+<div class="home-wrapper">
+    <mat-toolbar class="header">
+        <mat-icon (click)="drawer.toggle()" class="icon">menu</mat-icon>
+        <span>ANGULAR LIBRARY</span>
+    </mat-toolbar>
+    <div class="content">
+        <mat-drawer-container autosize>
+            <mat-drawer #drawer class=" left-section" [opened]="width > 720" [mode]="width > 720?'side':'over'">
+                <div><a routerLinkActive="active" class="list" routerLink="/home/buttons">button</a></div>
+                <div><a routerLinkActive="active" class="list" routerLink="/home/grid">grid</a></div>
+            </mat-drawer>
+        
+            <div class=" right-section">
+                <router-outlet></router-outlet>
+            </div>
+        </mat-drawer-container>
+    </div>      
+</div>
