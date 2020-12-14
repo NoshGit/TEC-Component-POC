@@ -35,37 +35,37 @@ export class ButtonsComponent implements OnInit {
 
 
   blueCtaInfo = {
-    classes : 'te-primary-cta',
+    classes : 'te-secondary-cta',
     text : 'checkout',
     iconName : ''
   };
   blueCtaInfoMedium = {
-    classes : 'te-primary-cta medium',
+    classes : 'te-secondary-cta medium',
     text : 'View Product',
     iconName : ''
   };
   blueCtaInfoSmall = {
-    classes : 'te-primary-cta small',
+    classes : 'te-secondary-cta small',
     text : 'View Product',
     iconName : ''
   };
   blueCtaInfoDisabled = {
-    classes : 'te-primary-cta disabled',
+    classes : 'te-secondary-cta disabled',
     text : 'checkout',
     iconName : ''
   };
   blueCtaInfoIconLeft = {
-    classes : 'te-primary-cta left-icon',
+    classes : 'te-secondary-cta left-icon',
     text : 'add to list',
     iconName : 'view_list'
   };
   blueCtaInfoIconRight = {
-    classes : 'te-primary-cta right-icon',
+    classes : 'te-secondary-cta right-icon',
     text : 'checkout',
     iconName : 'keyboard_arrow_right'
   };
   blueCtaInfoIcon = {
-    classes : 'te-primary-cta icon-simple-right',
+    classes : 'te-secondary-cta icon-simple-right',
     text : 'test',
     iconName : 'keyboard_arrow_right'
   };
