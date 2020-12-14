@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import {AddToCartModalComponent} from '../add-to-cart-modal/add-to-cart-modal.component';
 
@@ -9,24 +9,27 @@ import {AddToCartModalComponent} from '../add-to-cart-modal/add-to-cart-modal.co
 })
 
 export class AddToCartButtonComponent implements OnInit {
-
+  @Input() ctaInfo: any;
   constructor(public dialog: MatDialog) {}
-    openDialog() {
-      const dialogRef = this.dialog.open(AddToCartModalComponent,
-      {
-          data: {
-            name: "Simani", company: "capgemini"
-          },
-          width: '950px',
-          panelClass: 'atc-modal',
-      });
-  
-      dialogRef.afterClosed().subscribe(result => {
-        console.log(`Dialog result: ${result}`);
-      });
-    }
-
+    
   ngOnInit(): void {
+    console.log(this.ctaInfo);
+  }
+  openDialog() {
+    var modalWidth = "900px";
+    const dialogRef = this.dialog.open(AddToCartModalComponent,
+    {
+        id:"test",
+        data: {
+          modalname: "add-to-cart-modal"
+        },
+        width: modalWidth,
+        panelClass: 'atc-modal',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
 }

@@ -1,5 +1,7 @@
-<div href="" (click)="openDialog()" class="add-to-cart-cta button-div">
-    <span class="material-icons icon">shopping_cart</span>
-    <span>Add to Cart</span>
-    
+<div class="button-wrapper">
+    <div href="" (click)="openDialog()" class="add-to-cart-cta button-div {{ctaInfo.classes}}">
+        <span class="material-icons icon left">shopping_cart</span>
+        <span>Add to Cart</span>
+        <span class="material-icons icon right">shopping_cart</span>
+    </div>
 </div>
