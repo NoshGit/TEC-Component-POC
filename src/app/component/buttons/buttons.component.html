@@ -3,44 +3,68 @@
     <div class="button-container">
         <h2 class="header">BUTTONS</h2>
         <div class="button-wrapper">
-            <div class="button-desc">Primary CTA:</div>
-            <div class="button-selector"><b>Class:</b> te-primary-cta</div>
-            <te-add-to-cart [ctaInfo]=OrangeCta></te-add-to-cart>
-            <te-add-to-cart [ctaInfo]=OrangeCtaMedium></te-add-to-cart>
-            <te-add-to-cart [ctaInfo]=OrangeCtaSmall></te-add-to-cart>
-            <te-add-to-cart [ctaInfo]=OrangeCtaDisabled></te-add-to-cart>
-            <te-add-to-cart [ctaInfo]=OrangeCtaIcon></te-add-to-cart>
-            <te-add-to-cart [ctaInfo]=OrangeCtaIconSmall></te-add-to-cart>
-            <te-add-to-cart [ctaInfo]=OrangeCtaIconLeft></te-add-to-cart>
-            <te-add-to-cart [ctaInfo]=OrangeCtaIconRight></te-add-to-cart>
+                                  
+            <div class="display-container-left">
+                <div class="button-desc">Primary CTA:</div> 
+                <div class="button-selector"><b>Component:</b> te-primary-cta</div>
+            </div>
+            <div class="display-container-right">
+                <te-add-to-cart [ctaInfo]=OrangeCta></te-add-to-cart>
+                <te-add-to-cart [ctaInfo]=OrangeCtaMedium></te-add-to-cart>
+                <te-add-to-cart [ctaInfo]=OrangeCtaSmall></te-add-to-cart>
+                <te-add-to-cart [ctaInfo]=OrangeCtaDisabled></te-add-to-cart>
+                <te-add-to-cart [ctaInfo]=OrangeCtaIcon></te-add-to-cart>
+                <te-add-to-cart [ctaInfo]=OrangeCtaIconSmall></te-add-to-cart>
+                <te-add-to-cart [ctaInfo]=OrangeCtaIconLeft></te-add-to-cart>
+                <te-add-to-cart [ctaInfo]=OrangeCtaIconRight></te-add-to-cart>
+            </div>
+            
+            
+        </div>
+        <div class="button-wrapper">            
+            
+            <div class="display-container-left">
+                <div class="button-desc">Secondary CTA:</div>
+                <div class="button-selector"><b>Component:</b> te-secondary-cta</div>
+            </div>
+            <div class="display-container-right">
+                <app-te-cta [ctaInfo]=blueCtaInfo></app-te-cta>
+                <app-te-cta [ctaInfo]=blueCtaInfoMedium></app-te-cta>
+                <app-te-cta [ctaInfo]=blueCtaInfoSmall></app-te-cta>
+                <app-te-cta [ctaInfo]=blueCtaInfoDisabled></app-te-cta>
+                <app-te-cta [ctaInfo]=blueCtaInfoIcon></app-te-cta>
+                <app-te-cta [ctaInfo]=blueCtaInfoIconLeft></app-te-cta>
+                <app-te-cta [ctaInfo]=blueCtaInfoIconRight></app-te-cta>
+            </div>
         </div>
         <div class="button-wrapper">
-            <div class="button-desc">Secondary CTA:</div>
-            <div class="button-selector"><b>Class:</b> te-secondary-cta</div>
-            <app-te-cta [ctaInfo]=blueCtaInfo></app-te-cta>
-            <app-te-cta [ctaInfo]=blueCtaInfoMedium></app-te-cta>
-            <app-te-cta [ctaInfo]=blueCtaInfoSmall></app-te-cta>
-            <app-te-cta [ctaInfo]=blueCtaInfoDisabled></app-te-cta>
-            <app-te-cta [ctaInfo]=blueCtaInfoIcon></app-te-cta>
-            <app-te-cta [ctaInfo]=blueCtaInfoIconLeft></app-te-cta>
-            <app-te-cta [ctaInfo]=blueCtaInfoIconRight></app-te-cta>
+            <div class="display-container-left">
+                <div class="button-desc">White CTA:</div>
+                <div class="button-selector"><b>Component:</b> te-white-cta</div>
+            </div>
+            <div class="display-container-right">
+                <app-te-cta [ctaInfo]=whiteCtaBorder></app-te-cta>
+                <app-te-cta [ctaInfo]=whiteCtaShadow></app-te-cta>
+            </div>
         </div>
         <div class="button-wrapper">
-            <div class="button-desc">White CTA:</div>
-            <div class="button-selector"><b>Class:</b> te-white-cta</div>
-            <app-te-cta [ctaInfo]=whiteCtaBorder></app-te-cta>
-            <app-te-cta [ctaInfo]=whiteCtaShadow></app-te-cta>
+            <div class="display-container-left">
+                <div class="button-desc">Gray CTA:</div>
+                <div class="button-selector"><b>Class:</b> te-gray-cta</div>
+            </div>
+            <div class="display-container-right">
+                <app-te-cta [ctaInfo]=grayCta></app-te-cta>
+                <app-te-cta [ctaInfo]=grayCtaIconLeft></app-te-cta>
+            </div>
         </div>
         <div class="button-wrapper">
-            <div class="button-desc">Gray CTA:</div>
-            <div class="button-selector"><b>Class:</b> te-gray-cta</div>
-            <app-te-cta [ctaInfo]=grayCta></app-te-cta>
-            <app-te-cta [ctaInfo]=grayCtaIconLeft></app-te-cta>
-        </div>
-        <div class="button-wrapper">
-            <div class="button-desc">Dark Gray CTA:</div>
-            <div class="button-selector"><b>Class:</b> te-dark-gray-cta</div>
-            <app-te-cta [ctaInfo]=darkGrayCta></app-te-cta>
+            <div class="display-container-left">
+                <div class="button-desc">Dark Gray CTA:</div>
+                <div class="button-selector"><b>Component:</b> te-dark-gray-cta</div>
+            </div>
+            <div class="display-container-right">
+                <app-te-cta [ctaInfo]=darkGrayCta></app-te-cta>
+            </div>
         </div>
     </div>
 </div>
