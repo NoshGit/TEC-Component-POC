@@ -4,7 +4,7 @@
         width: 200px;
         display: block;
         margin: 5px 0px 0px 10px;
-        font: 900 14px Avenir,Avenir W02,Arial,Helvetica,sans-serif;
+        font: 900 12px Avenir,Avenir W02,Arial,Helvetica,sans-serif;
         text-decoration-line: none;
         text-align: center;
         cursor: pointer;
@@ -19,17 +19,23 @@
         &.te-secondary-cta{
             color: #fff;
             background: #0066a1;
-            text-transform: uppercase;
-            
+            &:hover{
+                background: #015c91;
+            }
         }
         &.te-white-cta{
             color: #0066a1;
             background: #fff;
-            
+            &:hover{
+                color: #2ca3e7;
+            }
         }
         &.te-gray-cta{
             color: #0066a1;
             background:#e9e8e8;
+            &:hover{
+                color: #2ca3e7;
+            }
         }
         &.te-dark-gray-cta{
             color: #fff;
@@ -78,8 +84,9 @@
         }
         &.icon-simple-right{
             .right{
-                display: block;
-                float: right;
+                display: inline-block;
+                width: auto;
+                position: absolute;
             }
         }
         &.border{

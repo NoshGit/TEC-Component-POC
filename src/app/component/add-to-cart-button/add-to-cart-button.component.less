@@ -4,7 +4,7 @@
         width: 200px;
         display: block;
         margin: 5px 0px 0px 10px;
-        font: 900 14px Avenir,Avenir W02,Arial,Helvetica,sans-serif;
+        font: 900 12px Avenir,Avenir W02,Arial,Helvetica,sans-serif;
         text-decoration-line: none;
         text-align: center;
         cursor: pointer;
@@ -19,7 +19,9 @@
         &.te-primary-cta{
             color: #fff!important;
             background: #e98300;
-            text-transform: uppercase;
+            &:hover{
+                background: #da7c02; 
+            }
         }
         &.medium{
             width: 150px;
@@ -53,10 +55,11 @@
                 float: right;
             }
         }
-        &.icon-simple-left{
-            .left{
-                display: block;
-                float: left;
+        &.icon-simple-right{
+            .right{
+                display: inline-block;
+                width: auto;
+                position: absolute;
             }
         }
         &.icon-simple-left-small{

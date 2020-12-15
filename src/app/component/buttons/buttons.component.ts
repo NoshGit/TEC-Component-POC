@@ -8,35 +8,51 @@ import { Component, OnInit } from '@angular/core';
 export class ButtonsComponent implements OnInit {
   showFiller = false;
 
-  AtcCta = {
+  OrangeCta = {
     classes : '',
+    text : 'CHECKOUT',
+    iconName : ''
   };
-  AtcCtaMedium = {
+  OrangeCtaMedium = {
     classes : 'medium',
+    text : 'ADD TO CART',
+    iconName : 'shopping_cart'
   };
-  AtcCtaSmall = {
+  OrangeCtaSmall = {
     classes : 'small',
+    text : 'ADD TO CART',
+    iconName : 'shopping_cart'
   };
-  AtcCtaDisabled = {
+  OrangeCtaDisabled = {
     classes : 'disabled',
+    text : 'CHECKOUT',
+    iconName : ''
   };
-  AtcCtaIcon = {
-    classes : 'icon-simple-left',
+  OrangeCtaIcon = {
+    classes : 'icon-simple-right',
+    text : 'Shop Antennas',
+    iconName : 'arrow_right'
   };
-  AtcCtaIconSmall = {
+  OrangeCtaIconSmall = {
     classes : 'icon-simple-left-small',
+    text : 'ADD TO CART',
+    iconName : 'shopping_cart'
   };
-  AtcCtaIconLeft = {
+  OrangeCtaIconLeft = {
     classes : 'left-icon',
+    text : 'ADD TO CART',
+    iconName : 'shopping_cart'
   };
-  AtcCtaIconRight = {
+  OrangeCtaIconRight = {
     classes : 'right-icon',
+    text : 'ADD TO CART',
+    iconName : 'shopping_cart'
   };
 
 
   blueCtaInfo = {
     classes : 'te-secondary-cta',
-    text : 'checkout',
+    text : 'CHECKOUT',
     iconName : ''
   };
   blueCtaInfoMedium = {
@@ -51,23 +67,23 @@ export class ButtonsComponent implements OnInit {
   };
   blueCtaInfoDisabled = {
     classes : 'te-secondary-cta disabled',
-    text : 'checkout',
+    text : 'CHECKOUT',
     iconName : ''
   };
   blueCtaInfoIconLeft = {
     classes : 'te-secondary-cta left-icon',
-    text : 'add to list',
+    text : 'ADD TO LIST',
     iconName : 'view_list'
   };
   blueCtaInfoIconRight = {
     classes : 'te-secondary-cta right-icon',
-    text : 'checkout',
+    text : 'CHECKOUT',
     iconName : 'keyboard_arrow_right'
   };
   blueCtaInfoIcon = {
     classes : 'te-secondary-cta icon-simple-right',
-    text : 'test',
-    iconName : 'keyboard_arrow_right'
+    text : 'View Products',
+    iconName : 'arrow_right'
   };
 
   whiteCta = {
