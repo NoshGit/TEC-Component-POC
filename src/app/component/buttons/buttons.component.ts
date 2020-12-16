@@ -101,24 +101,24 @@ export class ButtonsComponent implements OnInit {
     iconName : ''
   };
 
-  grayCta = {
-    classes : 'te-gray-cta',
+  greyCta = {
+    classes : 'te-grey-cta',
     text : 'Connect With Us',
     iconName : ''
   };
-  grayCtaIconLeft = {
-    classes : 'te-gray-cta left-icon',
+  greyCtaIconLeft = {
+    classes : 'te-grey-cta left-icon',
     text : 'EXPORT TO EXCEL',
     iconName : 'save_alt'
   };
 
-  darkGrayCta ={
-    classes : 'te-dark-gray-cta',
+  darkGreyCta ={
+    classes : 'te-dark-grey-cta',
     text : 'CALL US',
     iconName : ''
   };
-  darkGrayCtaSmall ={
-    classes : 'te-dark-gray-cta small',
+  darkGreyCtaSmall ={
+    classes : 'te-dark-grey-cta small',
     text : 'CALL US',
     iconName : ''
   };
