@@ -13,7 +13,6 @@ export class AddToCartButtonComponent implements OnInit {
   constructor(public dialog: MatDialog) {}
     
   ngOnInit(): void {
-    console.log(this.ctaInfo);
   }
   openDialog() {
     var modalWidth = "900px";

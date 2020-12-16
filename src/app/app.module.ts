@@ -8,6 +8,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatIconModule} from '@angular/material/icon';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatDividerModule} from '@angular/material/divider';
 
 import { AppComponent } from './app.component';
 import { ButtonsComponent } from './component/buttons/buttons.component';
@@ -33,7 +36,7 @@ import { TeCtaComponent } from './component/te-cta/te-cta.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MatToolbarModule, MatSidenavModule, MatDialogModule, MatIconModule
+    MatToolbarModule, MatSidenavModule, MatDialogModule, MatIconModule, MatExpansionModule, MatFormFieldModule, MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

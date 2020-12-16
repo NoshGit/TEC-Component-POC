@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./buttons.component.less']
 })
 export class ButtonsComponent implements OnInit {
-  showFiller = false;
 
   OrangeCta = {
     classes : '',
@@ -115,6 +114,11 @@ export class ButtonsComponent implements OnInit {
 
   darkGrayCta ={
     classes : 'te-dark-gray-cta',
+    text : 'CALL US',
+    iconName : ''
+  };
+  darkGrayCtaSmall ={
+    classes : 'te-dark-gray-cta small',
     text : 'CALL US',
     iconName : ''
   };

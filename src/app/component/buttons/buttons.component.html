@@ -3,68 +3,236 @@
     <div class="button-container">
         <h2 class="header">BUTTONS</h2>
         <div class="button-wrapper">
-                                  
-            <div class="display-container-left">
-                <div class="button-desc">Primary CTA:</div> 
-                <div class="button-selector"><b>Component:</b> te-primary-cta</div>
-            </div>
-            <div class="display-container-right">
-                <te-add-to-cart [ctaInfo]=OrangeCta></te-add-to-cart>
-                <te-add-to-cart [ctaInfo]=OrangeCtaMedium></te-add-to-cart>
-                <te-add-to-cart [ctaInfo]=OrangeCtaSmall></te-add-to-cart>
-                <te-add-to-cart [ctaInfo]=OrangeCtaDisabled></te-add-to-cart>
-                <te-add-to-cart [ctaInfo]=OrangeCtaIcon></te-add-to-cart>
-                <te-add-to-cart [ctaInfo]=OrangeCtaIconSmall></te-add-to-cart>
-                <te-add-to-cart [ctaInfo]=OrangeCtaIconLeft></te-add-to-cart>
-                <te-add-to-cart [ctaInfo]=OrangeCtaIconRight></te-add-to-cart>
-            </div>
-            
-            
-        </div>
-        <div class="button-wrapper">            
-            
-            <div class="display-container-left">
-                <div class="button-desc">Secondary CTA:</div>
-                <div class="button-selector"><b>Component:</b> te-secondary-cta</div>
-            </div>
-            <div class="display-container-right">
-                <app-te-cta [ctaInfo]=blueCtaInfo></app-te-cta>
-                <app-te-cta [ctaInfo]=blueCtaInfoMedium></app-te-cta>
-                <app-te-cta [ctaInfo]=blueCtaInfoSmall></app-te-cta>
-                <app-te-cta [ctaInfo]=blueCtaInfoDisabled></app-te-cta>
-                <app-te-cta [ctaInfo]=blueCtaInfoIcon></app-te-cta>
-                <app-te-cta [ctaInfo]=blueCtaInfoIconLeft></app-te-cta>
-                <app-te-cta [ctaInfo]=blueCtaInfoIconRight></app-te-cta>
-            </div>
+            <mat-accordion>
+                <mat-expansion-panel class="expansion-panel" >
+                    <mat-expansion-panel-header class="expansion-panel-header">
+                        <div class="button-desc-section">
+                            <div class="button-desc">Primary CTA:</div>
+                            <te-add-to-cart [ctaInfo]=OrangeCta class="button-selector"></te-add-to-cart>
+                            <div class="button-selector"><b>Component:</b> te-add-to-cart</div>
+                        </div>
+                    </mat-expansion-panel-header>
+                    <div class="button-row-container">
+                        <div class="button-row-header">
+                            <div><b>Description</b></div>
+                            <div><b>Buttons</b></div>
+                            <div><b>Classes</b></div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Primary CTA Large Size</div>
+                            <te-add-to-cart [ctaInfo]=OrangeCta class=button-row-selector></te-add-to-cart>
+                            <div class="button-row-selector">te-primary-cta</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Primary CTA Medium Size</div>
+                            <te-add-to-cart [ctaInfo]=OrangeCtaMedium class="button-row-selector"></te-add-to-cart>
+                            <div class="button-row-selector">te-primary-cta + medium</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">primary CTA Small Size</div>
+                            <te-add-to-cart [ctaInfo]=OrangeCtaSmall class="button-row-selector"></te-add-to-cart>
+                            <div class="button-row-selector">te-primary-cta + small</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Disabled Primary CTA</div>
+                            <te-add-to-cart [ctaInfo]=OrangeCtaDisabled class="button-row-selector"></te-add-to-cart>
+                            <div class="button-row-selector">te-primary-cta + disabled</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Primary CTA with left icon </div>
+                            <te-add-to-cart [ctaInfo]=OrangeCtaIconLeft class="button-row-selector"></te-add-to-cart>
+                            <div class="button-row-selector">te-primary-cta + left-icon</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Primary CTA with right icon</div>
+                            <te-add-to-cart [ctaInfo]=OrangeCtaIconRight class="button-row-selector"></te-add-to-cart>
+                            <div class="button-row-selector">te-primary-cta + right-icon</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Primary CTA with icon</div>
+                            <te-add-to-cart [ctaInfo]=OrangeCtaIcon class="button-row-selector"></te-add-to-cart>
+                            <div class="button-row-selector">te-primary-cta + icon-simple-right</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Primary CTA small with icon in left</div>
+                            <te-add-to-cart [ctaInfo]=OrangeCtaIconSmall class="button-row-selector"></te-add-to-cart>
+                            <div class="button-row-selector">te-primary-cta + icon-simple-left-small</div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
         </div>
         <div class="button-wrapper">
-            <div class="display-container-left">
-                <div class="button-desc">White CTA:</div>
-                <div class="button-selector"><b>Component:</b> te-white-cta</div>
-            </div>
-            <div class="display-container-right">
-                <app-te-cta [ctaInfo]=whiteCtaBorder></app-te-cta>
-                <app-te-cta [ctaInfo]=whiteCtaShadow></app-te-cta>
-            </div>
+            <mat-accordion>
+                <mat-expansion-panel class="expansion-panel">
+                    <mat-expansion-panel-header class="expansion-panel-header">
+                        <div class="button-desc-section">
+                            <div class="button-desc">Secondary CTA:</div>
+                            <app-te-cta [ctaInfo]=blueCtaInfo class="button-selector"></app-te-cta>
+                            <div class="button-selector"><b>Component:</b> app-te-cta</div>
+                        </div>
+                    </mat-expansion-panel-header>
+                    <div class="button-row-container">
+                        <div class="button-row-header">
+                            <div><b>Description</b></div>
+                            <div><b>Buttons</b></div>
+                            <div><b>Classes</b></div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Secondary CTA Large Size</div>
+                            <app-te-cta [ctaInfo]=blueCtaInfo class="button-row-selector"></app-te-cta>
+                            <div class="button-row-selector">te-secondary-cta</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Secondary CTA Medium Size</div>
+                            <app-te-cta [ctaInfo]=blueCtaInfoMedium class="button-row-selector"></app-te-cta>
+                            <div class="button-row-selector">te-secondary-cta + medium</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Secondary CTA Small Size</div>
+                            <app-te-cta [ctaInfo]=blueCtaInfoSmall class="button-row-selector"></app-te-cta>
+                            <div class="button-row-selector">te-secondary-cta + small</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Disabled Secondary CTA</div>
+                            <app-te-cta [ctaInfo]=blueCtaInfoDisabled class="button-row-selector"></app-te-cta>
+                            <div class="button-row-selector">te-secondary-cta + disabled</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Secondary CTA with left icon</div>
+                            <app-te-cta [ctaInfo]=blueCtaInfoIconLeft class="button-row-selector"></app-te-cta>
+                            <div class="button-row-selector">te-secondary-cta + left-icon</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Secondary CTA with right icon</div>
+                            <app-te-cta [ctaInfo]=blueCtaInfoIconRight class="button-row-selector"></app-te-cta>
+                            <div class="button-row-selector">te-secondary-cta + right-icon</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Secondary CTA with icon</div>
+                            <app-te-cta [ctaInfo]=blueCtaInfoIcon class="button-row-selector"></app-te-cta>
+                            <div class="button-row-selector">te-secondary-cta + icon-simple-right</div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
         </div>
         <div class="button-wrapper">
-            <div class="display-container-left">
-                <div class="button-desc">Gray CTA:</div>
-                <div class="button-selector"><b>Class:</b> te-gray-cta</div>
-            </div>
-            <div class="display-container-right">
-                <app-te-cta [ctaInfo]=grayCta></app-te-cta>
-                <app-te-cta [ctaInfo]=grayCtaIconLeft></app-te-cta>
-            </div>
+            <mat-accordion>
+                <mat-expansion-panel class="expansion-panel" >
+                    <mat-expansion-panel-header class="expansion-panel-header">
+                        <div class="button-desc-section">
+                            <div class="button-desc">White CTA:</div>
+                            <app-te-cta [ctaInfo]=whiteCta class="button-selector"></app-te-cta>
+                            <div class="button-selector"><b>Component:</b> app-te-cta</div>
+                        </div>
+                    </mat-expansion-panel-header>
+                    <div class="button-row-container">
+                        <div class="button-row-header">
+                            <div><b>Description</b></div>
+                            <div><b>Buttons</b></div>
+                            <div><b>Classes</b></div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">white CTA without Border</div>
+                            <app-te-cta [ctaInfo]=whiteCta class="button-row-selector"></app-te-cta>
+                            <div class="button-row-selector">te-white-cta</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">white CTA with Border</div>
+                            <app-te-cta [ctaInfo]=whiteCtaBorder class="button-row-selector"></app-te-cta>
+                            <div class="button-row-selector">te-white-cta + border</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">white CTA with Shadow</div>
+                            <app-te-cta [ctaInfo]=whiteCtaShadow class="button-row-selector"></app-te-cta>
+                            <div class="button-row-selector">te-white-cta + shadow</div>
+                        </div>
+                    </div>
+                </mat-expansion-panel> 
+            </mat-accordion>
         </div>
         <div class="button-wrapper">
-            <div class="display-container-left">
-                <div class="button-desc">Dark Gray CTA:</div>
-                <div class="button-selector"><b>Component:</b> te-dark-gray-cta</div>
-            </div>
-            <div class="display-container-right">
-                <app-te-cta [ctaInfo]=darkGrayCta></app-te-cta>
-            </div>
+            <mat-accordion>
+                <mat-expansion-panel class="expansion-panel" >
+                    <mat-expansion-panel-header class="expansion-panel-header">
+                        <div class="button-desc-section">
+                            <div class="button-desc">Gray CTA:</div>
+                            <app-te-cta [ctaInfo]=grayCta class="button-selector"></app-te-cta>
+                            <div class="button-selector"><b>Component:</b> app-te-cta</div>
+                        </div>
+                    </mat-expansion-panel-header>
+                    <div class="button-row-container">
+                        <div class="button-row-header">
+                            <div><b>Description</b></div>
+                            <div><b>Buttons</b></div>
+                            <div><b>Classes</b></div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Simple Gray CTA</div>
+                            <app-te-cta [ctaInfo]=grayCta class="button-row-selector"></app-te-cta>
+                            <div class="button-row-selector">te-gray-cta</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Gray CTA with left icon</div>
+                            <app-te-cta [ctaInfo]=grayCtaIconLeft class="button-row-selector"></app-te-cta>
+                            <div class="button-row-selector">te-gray-cta + left-icon</div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+        <div class="button-wrapper">
+            <mat-accordion>
+                <mat-expansion-panel class="expansion-panel" >
+                    <mat-expansion-panel-header class="expansion-panel-header">
+                        <div class="button-desc-section">
+                            <div class="button-desc">Dark Gray CTA:</div>
+                            <app-te-cta [ctaInfo]=darkGrayCta class="button-selector"></app-te-cta>
+                            <div class="button-selector"><b>Component:</b> app-te-cta</div>
+                        </div>
+                    </mat-expansion-panel-header>
+                    <div class="button-row-container">
+                        <div class="button-row-header">
+                            <div><b>Description</b></div>
+                            <div><b>Buttons</b></div>
+                            <div><b>Classes</b></div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Simple Dark Gray CTA</div>
+                            <app-te-cta [ctaInfo]=darkGrayCta class="button-row-selector"></app-te-cta>
+                            <div class="button-row-selector">te-dark-gray-cta</div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="button-row">
+                            <div class="button-row-selector">Dark Gray CTA Small Size</div>
+                            <app-te-cta [ctaInfo]=darkGrayCtaSmall class="button-row-selector"></app-te-cta>
+                            <div class="button-row-selector">te-dark-gray-cta + small</div>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
         </div>
     </div>
 </div>
