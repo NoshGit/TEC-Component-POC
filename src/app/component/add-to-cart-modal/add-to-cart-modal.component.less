@@ -4,6 +4,9 @@
     font: 400 14px Avenir,Avenir W02,Arial,Helvetica,sans-serif;
     overflow-x: hidden;
     padding: 20px;
+    @media (max-width: 720px) {
+        padding: 0px;
+    }
     .addedToCart-checkout{
         .addedToCart-product-name{
             @media (max-width: 720px) {
@@ -67,6 +70,9 @@
                         .product-desc{
                             display: inline-block;
                             padding-right: 20px;
+                            @media (max-width: 720px) {
+                                padding-right: 0;
+                            }
                             .cart-ul-width{
                                 width: 150px;
                                 display: inline-block;
@@ -93,7 +99,6 @@
                         width: 20%;
                         float: left;
                         @media (max-width: 720px) {
-                            width: 100%;
                             padding-left: 112px;
                             padding-top: 5px;
                         }

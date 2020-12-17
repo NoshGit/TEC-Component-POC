@@ -59,6 +59,9 @@
             }
             &.medium{
                 width: 620px;
+                @media (max-width: 720px) {
+                    width: 300px;
+                }
                 .container{
                     border: 1px solid #ededee;
                     background-color: #fff;
@@ -69,6 +72,10 @@
                     .promo-content{
                         width: 370px;
                         float: right;
+                        @media (max-width: 720px) {
+                            width: 300px;
+                            border: 1px solid #ededee;
+                        }
                         .content-wrapper{
                             padding: 10px 20px 20px;
                             p{

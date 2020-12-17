@@ -9,7 +9,7 @@ export class ButtonsComponent implements OnInit {
 
   OrangeCta = {
     classes : '',
-    text : 'CHECKOUT',
+    text : 'ADD TO CART',
     iconName : ''
   };
   OrangeCtaMedium = {
