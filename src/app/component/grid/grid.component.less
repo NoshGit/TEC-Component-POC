@@ -1,7 +1,41 @@
-.product-grid-content{
-    margin: 0 auto;
-    width: 950px;
-    @media (max-width: 720px) {
-        width: 90%;
+.grid-section{
+    margin: 0px auto;
+    border: 1px solid rgb(155, 168, 167);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 75vw;
+    .grid-container{
+        padding: 30px 30px 50px;
+        @media (max-width: 720px) {
+            padding: 20px 10px 30px;
+        }
+        .header{
+            color: rgb(37, 23, 61);
+        }
+        mat-divider{
+            clear: both;
+        }
+        .wrapper{
+            clear: both;
+            padding: 20px;
+            .sub-heading{
+                color: rgb(63, 27, 27);
+                font-size: 16px;
+                font-weight: 800;
+            }
+            .grid-details-section{
+                clear: both;
+                padding: 10px;
+                .grid-details{
+                    float: left;
+                    min-width: 250px;
+                    width: 20%;
+                }
+                .grid{
+                    display: inline-block;
+                    width: auto;
+                }
+            }
+        }
     }
 }

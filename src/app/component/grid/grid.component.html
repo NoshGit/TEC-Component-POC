@@ -1,5 +1,39 @@
-
-<div class="product-grid-content">
-    <h2>GRID</h2>
-    <app-bio-grid></app-bio-grid>
+<div class="grid-section">
+    <div class="grid-container">
+        <h2 class="header">GRID</h2>
+        <div class="wrapper">
+            <div class="sub-heading">
+                <div class="grid-desc">Compact Promo Grid</div>
+            </div>
+            <div class="grid-details-section">
+                <div class="grid-details">
+                    <div><b>Simple Promo Grid :</b></div>
+                    <div><b>Selector :</b> te-compact-promo-grid</div>
+                </div>
+                <te-compact-promo-grid class="grid"></te-compact-promo-grid>
+                <te-compact-promo-grid class="grid"></te-compact-promo-grid>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="wrapper">
+            <div class="sub-heading">Promo Grid</div>
+            <div class="grid-details-section">
+                <div class="grid-details">
+                    <div><b>Small Promo Grid :</b></div>
+                    <div><b>Selector :</b> te-promo-grid</div>
+                    <div>Class: small</div>
+                </div>
+                <te-promo-grid [promoGridSize]=small class="grid"></te-promo-grid>
+                <te-promo-grid [promoGridSize]=small class="grid"></te-promo-grid>
+            </div>
+            <div class="grid-details-section">
+                <div class="grid-details">
+                    <div><b>Medium Promo Grid :</b>
+                    <div><b>Selector :</b> te-promo-grid</div>
+                    </div><div>Class: medium</div>
+                </div>
+                <te-promo-grid [promoGridSize]=medium class="grid"></te-promo-grid>
+            </div>
+        </div>
+    </div>
 </div>

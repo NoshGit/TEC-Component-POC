@@ -18,8 +18,9 @@ import { HomeComponent } from './component/home/home.component';
 import { GridComponent } from './component/grid/grid.component';
 import { AddToCartButtonComponent } from './component/add-to-cart-button/add-to-cart-button.component';
 import { AddToCartModalComponent } from './component/add-to-cart-modal/add-to-cart-modal.component';
-import { BioGridComponent } from './component/bio-grid/bio-grid.component';
 import { TeCtaComponent } from './component/te-cta/te-cta.component';
+import { TeCompactPromoGridComponent } from './component/te-compact-promo-grid/te-compact-promo-grid.component';
+import { TePromoGridComponent } from './component/te-promo-grid/te-promo-grid.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,8 +29,9 @@ import { TeCtaComponent } from './component/te-cta/te-cta.component';
     GridComponent,
     AddToCartButtonComponent,
     AddToCartModalComponent,
-    BioGridComponent,
     TeCtaComponent,
+    TeCompactPromoGridComponent,
+    TePromoGridComponent,
   ],
   imports: [
     BrowserModule,

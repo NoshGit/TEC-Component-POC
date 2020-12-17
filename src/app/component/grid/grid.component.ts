@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GridComponent implements OnInit {
 
+  small = {
+    class : 'small'
+  };
+ 
+  medium = {
+    class : 'medium'
+  };
   constructor() { }
 
   ngOnInit(): void {

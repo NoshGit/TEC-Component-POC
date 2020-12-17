@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BioGridComponent } from './bio-grid.component';
+import { TePromoGridComponent } from './te-promo-grid.component';
 
-describe('BioGridComponent', () => {
-  let component: BioGridComponent;
-  let fixture: ComponentFixture<BioGridComponent>;
+describe('TePromoGridComponent', () => {
+  let component: TePromoGridComponent;
+  let fixture: ComponentFixture<TePromoGridComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BioGridComponent ]
+      declarations: [ TePromoGridComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BioGridComponent);
+    fixture = TestBed.createComponent(TePromoGridComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
