@@ -21,7 +21,10 @@
         }
         .wrapper{
             clear: both;
-            padding: 20px;
+            padding: 20px 0px 0px 0px;
+            @media (max-width: 720px) {
+                padding: 10px;
+            }
             .sub-heading{
                 color: rgb(63, 27, 27);
                 font-size: 16px;
@@ -29,15 +32,21 @@
             }
             .grid-details-section{
                 clear: both;
-                padding: 10px;
+                padding: 10px 0px 10px 20px;
+                @media (max-width: 720px) {
+                    padding-left: 10px;
+                }
                 .grid-details{
                     float: left;
-                    min-width: 250px;
+                    min-width: 230px;
                     width: 20%;
                 }
                 .grid{
                     display: inline-block;
                     width: auto;
+                    @media (max-width: 720px) {
+                        width: 100%;
+                    }
                 }
             }
         }
